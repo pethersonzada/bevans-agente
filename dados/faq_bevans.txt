@@ -1,0 +1,153 @@
+﻿FAQ E MANUAL DE REGRAS DO SISTEMA — APLICATIVO BEVANS 
+1. VISÃO GERAL E CADASTRO DE USUÁRIOS 
+1. O que é o aplicativo BeVans e quem pode utilizá-lo? O BeVans é uma plataforma de gestão e acompanhamento de transporte que atende dois perfis de usuários: Motoristas (que gerenciam turmas fixas de faculdade/escola, excursões e rotas públicas) e 
+Passageiros/Estudantes (que confirmam presença diária e acompanham a localização da van). 
+2. Como um motorista cria sua conta no aplicativo? Na tela inicial de cadastro do BeVans, o motorista deve selecionar o perfil de Motorista e preencher obrigatoriamente: o código de utilização disponibilizado pela equipe do sistema, nome completo, CPF, data de nascimento, telefone e criar e confirmar sua senha de acesso. 
+3. Por que o motorista precisa de um código de utilização para se cadastrar? O código de utilização é uma chave de liberação fornecida pela administração do BeVans para validar e habilitar motoristas autorizados a gerenciar turmas, excursões e rotas públicas dentro da plataforma. 
+4. Como um passageiro ou estudante cria seu cadastro? Na tela de cadastro de Passageiro do BeVans, o usuário deve informar seu e-mail, nome completo, CPF, data de nascimento, número de telefone e criar e confirmar sua senha de acesso. Diferente do motorista, o passageiro não precisa de código de liberação para criar a conta. 
+2. TELA INICIAL (HOME) E NAVEGAÇÃO DO MOTORISTA 
+5. Quais são as opções disponíveis na barra de navegação do motorista? Na parte inferior da tela inicial (Home) do motorista no BeVans, existe uma barra de navegação com 4 botões principais: Turmas Fixas (faculdade/escola), Excursões, Rotas Públicas e o botão de Perfil. 
+6. Como o motorista cria uma nova turma fixa de faculdade ou escola? Na aba de Turmas, o motorista deve tocar no botão de criar nova turma e preencher o nome da turma, um apelido de identificação, o turno (manhã, tarde ou noite), o endereço de saída (garagem), o destino (universidade ou local de ensino) e informações complementares. 
+7. O motorista pode gerenciar mais de uma turma ao mesmo tempo? Sim. Na tela de gestão de turmas do BeVans, o motorista possui um botão dedicado para criar novas turmas sempre que precisar, podendo administrar diferentes turnos, rotas ou instituições de ensino separadamente. 
+8. Onde o motorista encontra o código de acesso da turma criada? Assim que o motorista finaliza a criação de uma turma, o sistema gera automaticamente um código de acesso exclusivo de 6 caracteres exibido na tela da turma, junto com a lista de alunos vinculados. 
+9. O motorista consegue editar as informações de uma turma depois de criada? Sim. Ao acessar uma turma já cadastrada no BeVans, o motorista visualiza todos os dados configurados e conta com um botão de edição para atualizar nome, apelido, turno, endereços ou observações da turma. 
+10. Como funciona a aprovação de novos alunos na turma do motorista? Quando um passageiro solicita entrada usando o código de 6 caracteres, o motorista recebe uma notificação no ícone de sininho em sua tela inicial, onde pode revisar o pedido e aprovar ou recusar a entrada do aluno na turma. 
+3. LISTA DIÁRIA E EXECUÇÃO DE ROTAS DO MOTORISTA 
+11. Como o motorista visualiza quem vai viajar no dia? Dentro da tela da turma, o motorista acessa a lista diária de alunos atualizada em tempo real conforme os passageiros respondem à enquete. O sistema prioriza automaticamente no topo da lista os alunos que confirmaram presença ("Vou" ou "Vou e volto"). 
+12. Como o motorista inicia as viagens de ida e de volta? Na tela da turma, o motorista dispõe de dois botões específicos: "Começar rota de ida" e "Começar rota de volta". Ao tocar em um deles, a viagem é iniciada e os passageiros vinculados recebem o alerta de saída. 
+4. ENQUETE DIÁRIA E ENDEREÇOS DO PASSAGEIRO 
+13. Como o passageiro entra em uma turma fixa pela primeira vez? Após fazer login na 
+Home do BeVans, o passageiro deve tocar no botão "Entrar na turma" e digitar o código de 6 caracteres enviado pelo motorista. Após digitar, basta aguardar a aprovação do motorista pelo sininho de notificações. 
+14. Como funciona a enquete diária de presença do passageiro? Assim que a entrada na turma é aprovada, a turma aparece na Home do passageiro com uma enquete diária contendo opções de status: "Vou", "Não vou", "Vou e volto", "Só vou" ou "Só volto". 
+15. Como o passageiro define seus endereços de embarque e desembarque? Ao selecionar uma opção positiva na enquete diária, o passageiro escolhe o endereço de embarque e o endereço de desembarque para aquela viagem, podendo definir o mesmo local para ambos ou endereços diferentes conforme sua rotina do dia. 
+16. O passageiro pode salvar endereços fixos com nomes personalizados? Sim. O passageiro pode cadastrar e salvar locais fixos com nomes personalizados — como "Casa", "Trabalho" ou "Casa da Vó" — criando atalhos rápidos para selecionar de onde vai sair e onde deseja desembarcar sem precisar digitar o endereço todo dia. 
+17. O passageiro consegue ver quais colegas vão na van no mesmo dia? Sim, com restrições de privacidade. O passageiro visualiza uma lista dos colegas que já confirmaram presença naquela viagem, mas não tem acesso aos dados pessoais ou informações privadas dos outros integrantes da turma. 
+5. RASTREAMENTO EM TEMPO REAL E NOTIFICAÇÕES 
+18. Como o passageiro sabe que a van já saiu da garagem? Assim que o motorista toca em iniciar a rota no BeVans, o aplicativo envia um aviso automático ao passageiro informando que a van saiu da garagem e libera um botão de mapa na tela para acompanhamento. 
+19. Com que frequência a localização do motorista é atualizada no mapa? Durante uma viagem ativa, a localização da van no mapa é atualizada em tempo real a cada 2 segundos, permitindo que o passageiro acompanhe o trajeto exato do veículo e evite atrasos no ponto de embarque. 
+6. EXCURSÕES E LINK DE CONVITE 
+20. Como o motorista cria uma excursão no aplicativo? Na aba de Excursões da barra de navegação inferior do BeVans, o motorista toca em criar nova excursão e preenche o destino, a data da viagem, o horário de saída e as regras das passagens. 
+21. Quais são as opções de embarque disponíveis em uma excursão? Ao configurar uma excursão, o motorista pode escolher entre três modalidades de embarque: passagens com ponto fixo único, pontos/endereços específicos demarcados por ele ou busca domiciliar (passando na casa de cada participante que confirmar presença). 
+22. Como os passageiros confirmam presença em uma excursão? O motorista gera um link de convite exclusivo da excursão. Os participantes abrem esse link diretamente pelo navegador do celular ou computador — sem precisar baixar ou criar conta no BeVans — e confirmam presença informando seu nome e, opcionalmente, uma foto. 
+23. Onde o motorista vê os confirmados e os endereços da excursão? Assim que os participantes confirmam pelo link de convite, os nomes aparecem na lista da excursão no aplicativo do motorista. Se a excursão estiver configurada para busca domiciliar, o endereço de embarque informado pelo participante também é exibido. 
+7. ROTAS PÚBLICAS (PREFEITURAS E TRANSPORTE COLETIVO) 
+24. O que são as Rotas Públicas no aplicativo? A aba de Rotas Públicas da barra de navegação do BeVans é destinada a transportes coletivos ou institucionais — como ônibus ou vans de prefeituras que levam cidadãos para hospitais ou serviços públicos — permitindo o gerenciamento e rastreamento do trajeto para a população. 
+25. Quais modalidades de trajeto existem nas Rotas Públicas? As Rotas Públicas suportam tanto rotas fixas (que passam por pontos específicos e conhecidos de cada bairro para embarcar passageiros) quanto rotas flexíveis (adaptadas conforme o endereço dos usuários), permitindo que os passageiros acompanhem a localização da van em tempo real. 
+8. DÚVIDAS GERAIS, SEGURANÇA E SUPORTE 
+26. O que fazer se o código de 6 caracteres da turma der erro ou não funcionar? Verifique se os 6 caracteres foram digitados corretamente sem espaços extras e confirme com o motorista se a turma ainda está ativa. Caso o código tenha sido alterado, peça ao motorista para consultar o código atualizado na tela da turma. 
+27. Por que a localização da van não está aparecendo no mapa para o passageiro? O botão de rastreamento no mapa só fica ativo depois que o motorista inicia oficialmente a rota de ida ou de volta. Se a viagem já começou e o mapa não carrega, verifique sua conexão com a internet (Wi-Fi ou dados móveis) e as permissões de localização do aplicativo. 
+28. Não estou recebendo o aviso de que a van saiu da garagem. Como resolver? Acesse as configurações do seu smartphone, entre em Aplicativos > BeVans e verifique se as permissões de Notificações estão ativadas e se o modo de economia de bateria não está restringindo o funcionamento do app em segundo plano. 
+29. Posso alterar minha resposta na enquete diária depois de já ter marcado? Sim, desde que a alteração seja feita antes de o motorista iniciar a rota. Basta tocar novamente nas opções da enquete na Home para atualizar seu status de presença ou modificar seus endereços de embarque e desembarque. 
+30. Como entro em contato com o suporte técnico caso tenha problemas no aplicativo? Caso encontre dificuldades no cadastro, problemas com o código de utilização do motorista ou falhas técnicas que não estejam neste manual, entre em contato com a equipe de suporte oficial do BeVans pelos canais de atendimento disponibilizados na aba Perfil da barra de navegação. 
+ 
+ 
+FAQ E MANUAL DE REGRAS DO SISTEMA — APLICATIVO BEVANS
+CONTINUAÇÃO: PERGUNTAS 31 A 80
+As respostas identificadas como Regra proposta são sugestões de comportamento do sistema, ainda sujeitas à validação da equipe do projeto. As demais retomam regras já descritas nas perguntas 1 a 30.
+9. CONTAS, PERFIS E RECUPERAÇÃO DE ACESSO
+31. Uma mesma pessoa pode ser motorista e passageiro no BeVans?
+Regra proposta: O sistema já prevê os dois perfis, mas ainda não define se uma pessoa pode alternar entre eles com a mesma conta. Sugere-se permitir a vinculação dos perfis, desde que a função de motorista dependa do código de utilização autorizado.
+32. O que acontece quando alguém tenta cadastrar um CPF já utilizado?
+Regra proposta: Sugere-se impedir cadastros duplicados com o mesmo CPF e informar que já existe uma conta associada. O sistema deve orientar o usuário a recuperar o acesso, sem revelar dados da conta existente.
+33. Como recuperar o acesso quando o usuário esquece sua senha?
+Regra proposta: Sugere-se disponibilizar a opção “Esqueci minha senha” na tela de login, com verificação da identidade e envio de instruções para redefinição por um canal previamente validado. O processo não deve mostrar a senha anterior.
+34. O usuário pode atualizar seu telefone, e-mail ou outros dados cadastrais?
+Regra proposta: Sugere-se permitir a atualização dos dados de contato na aba Perfil, com autenticação e nova validação dos dados sensíveis quando necessário. O CPF deverá seguir uma regra específica de correção e verificação.
+35. Como o usuário solicita a exclusão de sua conta e de seus dados?
+Regra proposta: Sugere-se oferecer uma solicitação de exclusão pelo Perfil ou pelo suporte. A equipe deve informar quais dados podem ser eliminados, quais precisam ser conservados por obrigação legal e como a solicitação será acompanhada.
+36. O que acontece se o código de utilização de um motorista for inválido ourevogado?
+Regra proposta: O cadastro do motorista depende de um código fornecido pela administração. Sugere-se rejeitar códigos inválidos, expirados ou revogados e encaminhar o motorista ao suporte para regularização, sem permitir acesso às funções restritas.
+10. TURMAS FIXAS E CONTROLE DE ACESSO
+37. O que o passageiro visualiza enquanto aguarda aprovação para entrar em umaturma?
+Regra proposta: A entrada na turma depende da aprovação do motorista. Sugere-se exibir o status “Solicitação pendente” até a decisão, sem liberar a lista de passageiros, as enquetes ou o rastreamento daquela turma.
+38. O passageiro é avisado quando sua solicitação para entrar na turma érecusada?
+Regra proposta: O motorista já pode aprovar ou recusar uma solicitação. Sugere-se notificar o passageiro sobre a recusa e permitir uma nova solicitação apenas conforme as regras definidas para a turma.
+39. Um passageiro pode participar de mais de uma turma fixa?
+Regra proposta: O cadastro e a entrada em turmas estão previstos, mas não há regra expressa para múltiplos vínculos. Sugere-se permitir a participação em várias turmas, com enquetes e endereços independentes para cada uma.
+40. O motorista pode remover um passageiro de uma turma?
+Regra proposta: Sugere-se disponibilizar ao motorista a opção de remover integrantes, mediante confirmação da ação. O passageiro removido perderia o acesso às informações e ao rastreamento da turma, preservados os registros necessários.
+41. O que acontece quando uma turma deixa de funcionar?
+Regra proposta: Sugere-se permitir que o motorista arquive ou encerre a turma. Turmas encerradas devem deixar de receber novas confirmações, sem apagar automaticamente dados que ainda precisem ser preservados.
+42. O código de acesso da turma pode ser trocado?
+Regra proposta: O manual informa que cada turma recebe um código exclusivo de seis caracteres e menciona a possibilidade de alteração. Sugere-se permitir a geração de um novo código pelo motorista, invalidando o anterior para novos pedidos de entrada.
+43. Conhecer o código de seis caracteres é suficiente para acessar uma turma?
+Não. Conforme a regra atual, o código permite solicitar a entrada, mas o motorista precisa aprovar o pedido. Até a aprovação, o solicitante não deve ter acesso às informações reservadas aos integrantes.
+44. O passageiro pode sair de uma turma por conta própria?
+Regra proposta: Sugere-se incluir a opção “Sair da turma”, com confirmação. Após a saída, o passageiro deixaria de receber enquetes e notificações daquela turma e precisaria fazer nova solicitação caso desejasse retornar.
+11. ENQUETE DIÁRIA, PRESENÇA E ENDEREÇOS
+45. O que acontece se o passageiro não responder à enquete diária?
+Regra proposta: Sugere-se apresentar o status “Sem resposta” e não considerar o passageiro confirmado para o planejamento da rota. O motorista deve conseguir distinguir essa condição de uma resposta “Não vou”.
+46. Qual é a diferença entre “Vou”, “Só vou” e “Vou e volto”?
+Regra proposta: O manual atual lista “Vou”, “Não vou”, “Vou e volto”, “Só vou” e “Só volto”, mas não esclarece a diferença entre “Vou” e “Só vou”. Recomenda-se padronizar as respostas para “Vou e volto”, “Só vou”, “Só volto” e “Não vou” antes da implementação.
+47. O passageiro pode mudar a confirmação depois que a rota começa?
+Pela regra atual, o passageiro pode alterar sua resposta e seus endereços apenas antes de o motorista iniciar a rota. Depois disso, a alteração pela enquete não está prevista; situações excepcionais devem ser tratadas com o motorista.
+48. A confirmação de presença vale para outros dias?
+Regra proposta: Sugere-se que cada resposta valha somente para a data correspondente. No dia seguinte, uma nova enquete deve ser disponibilizada, evitando presumir presença com base em confirmações anteriores.
+49. Como devem funcionar os endereços quando o passageiro vai e volta?
+Regra proposta: O sistema já permite escolher embarque e desembarque. Sugere-se que a opção “Vou e volto” permita revisar os locais necessários a cada trecho, para evitar que o percurso de volta utilize um endereço incorreto.
+50. O motorista pode visualizar os endereços informados pelos passageiros?
+Regra proposta: O gerenciamento das viagens exige que o motorista tenha acesso aos locais necessários para embarque e desembarque dos passageiros confirmados. Sugere-se limitar essa visualização aos dados da viagem e impedir o acesso por pessoas não autorizadas.
+51. O que acontece quando um passageiro muda de endereço no mesmo dia?
+Regra proposta: Antes de a rota ser iniciada, a regra atual permite alterar o endereço pela enquete. Sugere-se que o aplicativo atualize imediatamente os dados usados pelo motorista no planejamento do trecho correspondente.
+52. A lista de passageiros da ida deve ser igual à lista da volta?
+Regra proposta: Não necessariamente. As opções “Só vou”, “Só volto” e “Vou e volto” indicam necessidades diferentes. Sugere-se que o sistema gere listas próprias para ida e volta, incluindo apenas quem confirmou cada trecho.
+12. EXECUÇÃO DA VIAGEM E RASTREAMENTO
+53. Como o motorista encerra uma viagem depois de chegar ao destino?
+Regra proposta: O manual detalha o início da ida e da volta, mas não define o encerramento. Sugere-se incluir o botão “Finalizar rota”, que encerre a viagem ativa e desative o compartilhamento de localização daquela viagem.
+54. O que acontece se o motorista precisar cancelar uma viagem que já iniciou?
+Regra proposta: Sugere-se permitir o cancelamento com indicação de motivo e aviso automático aos passageiros envolvidos. O sistema deve diferenciar uma viagem cancelada de outra concluída normalmente.
+55. Como o aplicativo deve agir quando o sinal de GPS do motorista falha?
+Regra proposta: Sugere-se mostrar aos passageiros a última localização conhecida e o horário da última atualização, acompanhados de aviso de sinal indisponível. O mapa não deve representar essa posição como se fosse atual.
+56. Os passageiros continuam acompanhando a van depois do fim da rota?
+Regra proposta: Sugere-se encerrar o rastreamento quando a viagem for finalizada ou cancelada. Assim, os passageiros acessam a localização somente durante a execução de uma rota autorizada.
+57. A atualização da localização a cada dois segundos é garantida?
+Regra proposta: O intervalo de dois segundos é o comportamento previsto no manual original. Na prática, a entrega depende de conexão, GPS, bateria e restrições do aparelho. Sugere-se tratá-lo como frequência-alvo e informar quando houver atraso nas atualizações.
+58. Como os passageiros ficam sabendo de atrasos ou mudanças na saída?
+Regra proposta: Atualmente, está previsto o alerta quando a rota começa. Sugere-se também permitir que o motorista envie avisos de atraso, antecipação ou alteração de horário aos passageiros vinculados à viagem.
+59. O BeVans registra quando um passageiro efetivamente embarcou?
+Regra proposta: A enquete registra a intenção de viajar, mas o manual não descreve confirmação de embarque. Sugere-se diferenciar “Presença confirmada” de “Embarque realizado” caso a equipe decida implementar esse controle.
+60. O motorista pode modificar a sequência de paradas enquanto está dirigindo?
+Regra proposta: O manual não define alterações de trajeto em andamento. Sugere-se permitir ajustes somente quando feitos em condições seguras, com registro das mudanças e atualização das informações apresentadas aos passageiros.
+13. EXCURSÕES, INSCRIÇÕES E CONVITES
+61. O link de convite de uma excursão possui prazo de validade?
+Regra proposta: O manual prevê um link exclusivo, mas não estabelece sua duração. Sugere-se permitir que o motorista defina o período de inscrição ou encerre manualmente o recebimento de confirmações.
+62. Como evitar que uma pessoa confirme presença duas vezes na mesmaexcursão?
+Regra proposta: Como a confirmação pelo navegador não exige conta, a duplicidade precisa de tratamento próprio. Sugere-se adotar uma verificação apropriada e oferecer ao motorista a possibilidade de identificar e corrigir registros repetidos.
+63. O participante pode alterar ou cancelar a confirmação feita pelo link?
+Regra proposta: A regra atual descreve apenas a confirmação inicial. Sugere-se disponibilizar um meio seguro para editar ou cancelar a participação até o prazo estipulado pelo organizador, refletindo a mudança na lista do motorista.
+64. O motorista pode definir a quantidade máxima de vagas de uma excursão?
+Regra proposta: O manual ainda não menciona limite de participantes. Sugere-se incluir a capacidade de vagas durante a criação da excursão e impedir novas confirmações quando o limite for alcançado, conforme a política definida.
+65. Como o sistema deve avisar os participantes quando uma excursão écancelada?
+Regra proposta: Sugere-se disponibilizar a opção de cancelamento ao motorista e registrar o status da excursão. Para participantes sem cadastro, o aviso dependerá dos canais de contato efetivamente coletados e autorizados.
+66. É obrigatório enviar uma foto para confirmar presença em uma excursão?
+Não. Conforme a regra atual, o participante deve informar seu nome, enquanto o envio de foto é opcional. A ausência de imagem não deve impedir a confirmação.
+67. Quem participa pelo link de excursão pode acompanhar a van em tempo real?
+Regra proposta: O manual confirma que o link permite inscrição sem conta, mas não define rastreamento para esses convidados. Sugere-se avaliar um acesso temporário ao mapa, restrito à excursão e ao período da viagem.
+14. ROTAS PÚBLICAS E TRANSPORTE INSTITUCIONAL
+68. O cidadão precisa criar conta para consultar uma rota pública?
+Regra proposta: O manual não esclarece se a consulta pública exige cadastro. Sugere-se permitir a visualização de horários, pontos e posição do veículo sem expor dados pessoais, definindo autenticação apenas para funções que realmente precisem dela.
+69. Como um passageiro encontra uma rota pública disponível?
+Regra proposta: Sugere-se oferecer busca por cidade, instituição, linha ou destino na seção Rotas Públicas. Cada resultado deve mostrar informações suficientes para identificar corretamente o serviço de transporte.
+70. Os pontos de embarque e os horários das rotas fixas ficam disponíveis?
+Regra proposta: O manual define rotas fixas com pontos conhecidos. Sugere-se exibir no aplicativo a sequência de pontos, os horários planejados e eventuais atualizações realizadas pelo responsável pela rota.
+71. Como o sistema recebe endereços nas rotas públicas flexíveis?
+Regra proposta: O manual prevê rotas adaptadas aos endereços dos usuários, mas não detalha o pedido. Sugere-se coletar somente os locais necessários ao atendimento e submeter as solicitações às regras do serviço público responsável.
+72. Quem pode criar, alterar ou suspender uma rota pública?
+Regra proposta: Sugere-se restringir essas ações a motoristas autorizados e, quando aplicável, aos responsáveis da instituição ou prefeitura. A população deve acessar as informações de consulta, sem poder alterar a configuração do serviço.
+73. O que o aplicativo mostra quando uma rota pública é suspensa?
+Regra proposta: Sugere-se exibir o status “Suspensa” ou “Cancelada” junto da justificativa e da previsão de retorno, quando informadas pelo responsável. Isso evita que os usuários aguardem um veículo que não realizará o percurso.
+15. PRIVACIDADE, CONECTIVIDADE E SUPORTE
+74. Os colegas de turma podem visualizar CPF, telefone ou endereço uns dosoutros?
+Não. O manual já restringe a lista visível aos colegas que confirmaram presença, sem acesso aos dados pessoais dos demais. Sugere-se explicitar que CPF, telefone e endereços particulares não aparecem nessa lista.
+75. A localização do motorista pode ser acessada por qualquer pessoa?
+Regra proposta: O rastreamento previsto é vinculado às viagens. Sugere-se restringir o acesso às pessoas autorizadas para cada modalidade, com início e encerramento definidos para o compartilhamento de localização.
+76. Por quanto tempo os dados das viagens e dos passageiros ficam armazenados?
+Regra proposta: O manual não estabelece prazos de retenção. Sugere-se definir uma política específica para dados cadastrais, enquetes, endereços e localização, de acordo com a finalidade do tratamento e as obrigações legais aplicáveis.
+77. O aplicativo funciona normalmente quando o motorista está sem internet?
+Regra proposta: As funções de sincronização, alertas e rastreamento dependem de conectividade. Sugere-se mostrar um aviso de conexão indisponível e definir quais informações podem ser consultadas localmente, sem prometer atualizações em tempo real nesse período.
+78. O motorista precisa autorizar o acesso à localização do celular?
+Regra proposta: Para compartilhar a posição da van, o aplicativo precisa de permissão de localização compatível com o funcionamento da viagem. Sugere-se orientar o motorista sobre permissões necessárias e informar claramente quando o compartilhamento estiver ativo.
+79. Como relatar um erro técnico e ajudar o suporte a identificar o problema?
+Regra proposta: O manual informa que o suporte está disponível pela aba Perfil. Sugere-se orientar o usuário a enviar uma descrição do erro, o momento em que ocorreu, a tela afetada e, quando possível, uma captura sem dados sensíveis.
+80. Onde o usuário pode consultar atualizações das regras de uso do BeVans?
+Regra proposta: Sugere-se disponibilizar este FAQ e os documentos de uso e privacidade na aba Perfil ou em uma página oficial. Alterações relevantes devem apresentar a data da atualização e ser comunicadas aos usuários quando necessário.
