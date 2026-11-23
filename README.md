@@ -5,13 +5,45 @@ Protótipo de assistente de suporte do **BeVans** que responde a perguntas sobre
 **Repositório:** [pethersonzada/bevans-agente](https://github.com/pethersonzada/bevans-agente)  
 **Ecossistema:** [Mobile](https://github.com/pethersonzada/bevans-frontend) · [Backend](https://github.com/pethersonzada/bevans-backend) · [WebApp](https://github.com/pethersonzada/bevans-webapp)
 
+## Publicar uma demonstração com Streamlit
+
+Não é necessário abrir o VS Code. O repositório já inclui `streamlit_app.py` e as dependências de hospedagem.
+
+1. Acesse [Streamlit Community Cloud](https://share.streamlit.io) e entre com a conta do GitHub.
+2. Selecione **Repository:** `pethersonzada/bevans-agente`, **Branch:** `main` e **Main file path:** `streamlit_app.py`.
+3. Abra **Advanced settings**, selecione **Python 3.12** e preencha **Secrets** com o TOML abaixo:
+
+```toml
+OPENAI_API_KEY = "SUA_CHAVE_OPENAI_AQUI"
+```
+
+4. Salve, clique em **Deploy** e teste uma pergunta sobre o BeVans. A chave acima é apenas um exemplo; use a verdadeira somente no campo privado de Secrets.
+
+**Como funciona:** o Streamlit lê `dados/faq_bevans.txt`, gera embeddings com `text-embedding-3-small` e mantém o índice ChromaDB no armazenamento temporário da instância. O índice pode ser reconstruído após um reinício. As respostas utilizam `gpt-4o-mini` por padrão. A geração de embeddings e respostas consome créditos da API OpenAI.
+
+**Mostrar no webapp da Vercel:** o Streamlit é hospedado separadamente. Depois do deploy, é possível criar uma rota no Next.js com um `iframe`, apontando para a URL REAL do aplicativo Streamlit acrescida de `?embed=true`. Exemplo:
+
+```jsx
+export default function AssistentePage() {
+  return (
+    <iframe
+      title="Assistente BeVans"
+      src="https://SEU-APP.streamlit.app/?embed=true"
+      style={{ width: "100%", height: "80vh", border: 0 }}
+    />
+  );
+}
+```
+
+Troque `SEU-APP` pelo subdomínio real. Uma demonstração pública sem autenticação pode consumir créditos da OpenAI; monitore uso e limites. Não envie senhas, CPFs ou tokens de usuários pelo chat.
+
 ## Tecnologias
 
 - **Python**, **OpenAI Python SDK** e modelo de chat configurável (`gpt-4o-mini` por padrão).
 - **ChromaDB**, com coleção persistente `faq_colecao`.
 - **FastAPI** e **Pydantic** para o endpoint de conversa.
 - `python-dotenv` para ler configurações locais.
-- `pypdf` no script de indexação; `sentence-transformers` também consta nas dependências.
+- `streamlit` para a demonstração web; bibliotecas extras do curso preservadas em `requirements-curso.txt`.
 
 ## Como funciona
 
@@ -37,10 +69,12 @@ O prompt direciona o atendimento aos perfis **motorista** e **passageiro**, evit
 ## Arquivos do projeto
 
 ```text
+streamlit_app.py                 # interface do chat no Streamlit
 api_bevans.py                    # API FastAPI e endpoint POST /chat
 chat_rag.py                      # interface de conversa no terminal
 criar_banco.py                   # criação/recriação da coleção vetorial
-requirements.txt                 # bibliotecas do protótipo
+requirements.txt                 # dependências do Streamlit e da API
+requirements-curso.txt           # bibliotecas adicionais do minicurso
 teste_api.py                      # exemplo de chamada direta à OpenAI
 dados/
   faq_bevans.txt                 # fonte de conhecimento em texto
@@ -91,10 +125,9 @@ Depois instale as dependências:
 
 ```bash
 pip install -r requirements.txt
-pip install fastapi uvicorn
 ```
 
-**Por que a segunda instalação?** O código `api_bevans.py` importa FastAPI, mas `requirements.txt`, na versão consultada, **não declara `fastapi` nem `uvicorn`**. Incluí-los em `requirements.txt` é uma correção recomendada para reproduzibilidade.
+O `requirements.txt` já contém `streamlit`, `fastapi` e `uvicorn`.
 
 Crie `.env` na raiz:
 
@@ -105,32 +138,15 @@ OPENAI_CHAT_MODEL=gpt-4o-mini
 
 Nunca versione `.env` nem exponha a chave em clientes web ou mobile.
 
-## Indexação do FAQ: ajuste necessário
+## Indexação do FAQ para a API FastAPI
 
-**Existe um problema conhecido na versão consultada:** `criar_banco.py` faz:
-
-```python
-caminho_pdf = os.path.join(diretorio_base, "dados", "faq_bevans.txt")
-leitor = PdfReader(caminho_pdf)
-```
-
-O arquivo fornecido é `.txt`, enquanto `PdfReader` espera um PDF. Isso pode impedir a recriação da base. Corrija o script para abrir o arquivo como texto UTF-8 antes de executar a indexação, por exemplo:
-
-```python
-caminho_faq = os.path.join(diretorio_base, "dados", "faq_bevans.txt")
-with open(caminho_faq, "r", encoding="utf-8-sig") as arquivo:
-    texto = arquivo.read()
-```
-
-Preserve depois desse trecho a lógica de divisão em *chunks* e escrita no ChromaDB. O script atual utiliza blocos de **450 caracteres**, sobreposição de **80** e recria a coleção `faq_colecao`; isso elimina o conteúdo anterior dessa coleção. Faça backup se necessário.
-
-Uma vez corrigida a leitura do arquivo, execute:
+O script `criar_banco.py` já lê `dados/faq_bevans.txt` como UTF-8, divide o conteúdo em blocos de 450 caracteres com sobreposição de 80 e recria a coleção `faq_colecao` no diretório local `dados/banco_vetorial_faq`. Para executá-lo:
 
 ```bash
 python criar_banco.py
 ```
 
-A API exige que a coleção exista ao importar o módulo, por isso a indexação precisa funcionar antes de iniciar o servidor.
+A API FastAPI existente utiliza esse banco. Já o Streamlit utiliza um índice separado criado automaticamente a partir do FAQ para facilitar a hospedagem.
 
 ## Executar a API
 
@@ -158,7 +174,7 @@ A execução requer conectividade com a API OpenAI e pode gerar custos por uso.
 
 ## Limitações e melhorias prioritárias
 
-1. **Reprodutibilidade:** corrigir a leitura `.txt` em `criar_banco.py`; adicionar `fastapi` e `uvicorn` às dependências; fixar versões testadas.
+1. **Reprodutibilidade:** testar o deploy Cloud e, após validar, fixar versões das dependências.
 2. **Segurança:** `api_bevans.py` utiliza `allow_origins=["*"]` com `allow_credentials=True` e não mostra autenticação ou limite de requisições em `/chat`. Restringir origens, implementar controle de acesso e rate limiting antes de exposição pública.
 3. **Histórico:** validar tamanho, estrutura e papéis das mensagens recebidas; não aceitar mensagens `system` arbitrárias de clientes como se fossem instruções confiáveis.
 4. **Qualidade do RAG:** criar testes de perguntas do FAQ e de casos sem resposta; revisar pertinência dos trechos recuperados e sinalizar ausência de fontes adequadas.
@@ -167,4 +183,4 @@ A execução requer conectividade com a API OpenAI e pode gerar custos por uso.
 
 > Este repositório é um **protótipo de suporte**. As instruções acima distinguem o comportamento presente no código dos ajustes necessários para uma instalação reprodutível e uma publicação segura.
 
-**Base desta documentação:** commit inicial, `api_bevans.py`, `criar_banco.py`, `chat_rag.py` e `requirements.txt` consultados no GitHub em 21/11/2026.
+**Atualizado em 23/11/2026:** adicionada a demonstração com Streamlit, corrigida a leitura do FAQ e ajustadas as dependências.
