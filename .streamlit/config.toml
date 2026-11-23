@@ -1,0 +1,15 @@
+# Tema BeVans para o Streamlit Community Cloud.
+# Separar paletas evita texto claro sobre fundo claro no iframe.
+# O Streamlit seleciona os estilos conforme o tema ativo.
+
+[theme.light]
+primaryColor = "#007BFF"
+backgroundColor = "#F8FAFF"
+secondaryBackgroundColor = "#EAF2FC"
+textColor = "#14253A"
+
+[theme.dark]
+primaryColor = "#72B9FF"
+backgroundColor = "#0E1928"
+secondaryBackgroundColor = "#1A2D43"
+textColor = "#E9F4FF"
