@@ -15,6 +15,8 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 
+load_dotenv()
+
 BASE_DIR = Path(__file__).resolve().parent
 FAQ_PATH = BASE_DIR / "dados" / "faq_bevans.txt"
 EMBEDDING_MODEL = "text-embedding-3-small"
@@ -52,8 +54,6 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
-load_dotenv()
 
 
 def obter_chave() -> str:
