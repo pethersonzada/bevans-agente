@@ -43,13 +43,17 @@ st.set_page_config(
     layout="centered",
 )
 
+# Use as cores nativas definidas em .streamlit/config.toml.
+# Nao force fundos claros via CSS: isso causava texto claro sobre fundo claro
+# quando o Streamlit era aberto no tema escuro dentro do webapp.
 st.markdown(
     """
     <style>
-    .stApp { background-color: #f8faff; }
     .block-container { max-width: 830px; padding-top: 2rem; }
-    .stChatMessage { border: 1px solid #e5edfa; border-radius: 16px; }
-    [data-testid="stSidebar"] { background-color: #eef5ff; }
+    .stChatMessage {
+        border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+        border-radius: 16px;
+    }
     </style>
     """,
     unsafe_allow_html=True,
