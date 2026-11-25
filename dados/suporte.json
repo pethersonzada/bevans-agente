@@ -1,0 +1,262 @@
+[
+  {
+    "id": "entrada",
+    "perfil": "todos",
+    "fonte": "android:src/app/entrar-turma.tsx",
+    "consultas": [
+      "Entrar na turma com convite",
+      "como entro na turma",
+      "participar do grupo",
+      "tenho o código de seis caracteres"
+    ],
+    "resposta": "Na tela Entrar em uma Turma, digite o código de 6 caracteres que o motorista passou e envie a solicitação. Aguarde a aprovação do motorista."
+  },
+  {
+    "id": "codigo",
+    "perfil": "todos",
+    "fonte": "android:src/app/entrar-turma.tsx",
+    "consultas": [
+      "Código de turma inválido",
+      "convite da turma deu erro",
+      "código da turma não funciona"
+    ],
+    "resposta": "Confira os 6 caracteres do convite da turma e peça ao motorista que confirme o código atual. Se o app já mostrou “Solicitação enviada”, aguarde a aprovação."
+  },
+  {
+    "id": "criar",
+    "perfil": "motorista",
+    "fonte": "android:src/components/turmas/CadastroTurma.tsx",
+    "consultas": [
+      "Criar uma turma",
+      "cadastrar turma fixa",
+      "montar turma de faculdade"
+    ],
+    "resposta": "Abra Turmas, inicie o cadastro e preencha as etapas da turma, incluindo nome, turno, origem e destino. Revise os dados antes de salvar."
+  },
+  {
+    "id": "aprovar",
+    "perfil": "motorista",
+    "fonte": "backend:SolicitacaoController.java",
+    "consultas": [
+      "Aprovar aluno",
+      "aceitar solicitação de entrada",
+      "recusar pedido do passageiro"
+    ],
+    "resposta": "Abra as solicitações de entrada, confira o passageiro e a turma e escolha aprovar ou recusar."
+  },
+  {
+    "id": "presenca",
+    "perfil": "passageiro",
+    "fonte": "android:src/components/passageiro/SeletorPresenca.tsx",
+    "consultas": [
+      "Confirmar presença",
+      "marcar que vou",
+      "só vou voltar",
+      "vou e volto",
+      "só quero ida",
+      "enquete diária",
+      "mudar minha presença",
+      "e na volta"
+    ],
+    "resposta": "Na confirmação de hoje da turma, selecione Ida, Volta, Ambos ou Não vou. Para viajar só na volta, escolha Volta. Confira o ponto ou endereço solicitado para o trecho e salve."
+  },
+  {
+    "id": "limpar",
+    "perfil": "passageiro",
+    "fonte": "android:src/components/passageiro/SeletorPresenca.tsx",
+    "consultas": [
+      "Limpar confirmação",
+      "apagar presença",
+      "desfazer resposta",
+      "retirar confirmação de hoje"
+    ],
+    "resposta": "Na confirmação diária da turma, toque em Limpar e confirme. Isso remove sua resposta de hoje. Você pode responder novamente. Para comunicar que vai faltar, escolha Não vou."
+  },
+  {
+    "id": "endereco",
+    "perfil": "passageiro",
+    "fonte": "android:src/components/passageiro/SeletorPresenca.tsx",
+    "consultas": [
+      "Escolher endereço de ida e volta",
+      "ponto de embarque da turma",
+      "local de desembarque"
+    ],
+    "resposta": "Ao confirmar presença, confira o local de cada trecho selecionado. A turma pode usar paradas definidas ou pedir que você escolha um endereço."
+  },
+  {
+    "id": "fila",
+    "perfil": "passageiro",
+    "fonte": "android:src/services/passageiroHome.ts",
+    "consultas": [
+      "Quantas paradas faltam",
+      "posição na fila",
+      "sou o próximo",
+      "fila sumiu sem internet",
+      "minha vez de embarcar"
+    ],
+    "resposta": "Na Home, veja Seu embarque. Quando o servidor informa a sequência atual, aparece quantas paradas faltam ou se você é o próximo. Sem conexão, a fila fica indisponível. O número fixo da parada no roteiro não indica quantas faltam."
+  },
+  {
+    "id": "embarque",
+    "perfil": "todos",
+    "fonte": "android:src/services/passageiroHome.ts",
+    "consultas": [
+      "Presença garante embarque",
+      "embarque confirmado",
+      "diferença entre presença e embarque",
+      "já embarquei"
+    ],
+    "resposta": "A presença informa a intenção de viajar. O embarque é registrado durante a viagem. Em Seu embarque, o passageiro pode ver se está aguardando, embarcou, não embarcou ou já desembarcou."
+  },
+  {
+    "id": "gps",
+    "perfil": "todos",
+    "fonte": "android:src/components/RastreamentoViagem.tsx",
+    "consultas": [
+      "GPS atrasado",
+      "mapa da van travou",
+      "rastrear van",
+      "localização desatualizada",
+      "onde está a van",
+      "acompanhar aquela viagem"
+    ],
+    "resposta": "Confira se a viagem já começou e se há conexão. Abra o acompanhamento da viagem. Se a localização aparecer desatualizada ou indisponível, o mapa não confirma onde a van está agora. Não há intervalo garantido entre atualizações."
+  },
+  {
+    "id": "iniciar",
+    "perfil": "motorista",
+    "fonte": "android:src/app/mapa.tsx",
+    "consultas": [
+      "Iniciar rota da turma",
+      "começar viagem de volta",
+      "sair para ida",
+      "finalizar rota"
+    ],
+    "resposta": "Na turma, escolha o sentido da viagem e inicie a rota correspondente. Ao concluir o percurso, encerre a viagem ativa antes de iniciar outra."
+  },
+  {
+    "id": "publica",
+    "perfil": "todos",
+    "fonte": "web:app/lib/conhecimento-bevans.mjs",
+    "consultas": [
+      "Rota pública fixa ou flexível",
+      "diferença entre fixa e flexível",
+      "catálogo de rotas públicas"
+    ],
+    "resposta": "Abra Rotas Públicas e consulte as opções publicadas no catálogo. A fixa segue pontos definidos. A flexível considera as solicitações de atendimento no planejamento."
+  },
+  {
+    "id": "excursao",
+    "perfil": "passageiro",
+    "fonte": "backend:ConviteExcursaoPublicoController.java",
+    "consultas": [
+      "Participar de excursão",
+      "link da excursão",
+      "inscrição no passeio",
+      "convite da excursão"
+    ],
+    "resposta": "Abra o link enviado pelo organizador, confira a excursão e preencha a inscrição no navegador. Guarde a confirmação para consultar sua inscrição."
+  },
+  {
+    "id": "organizar",
+    "perfil": "motorista",
+    "fonte": "android:src/components/excursoes/PlanejarExcursao.tsx",
+    "consultas": [
+      "Organizar excursão",
+      "criar excursão",
+      "montar roteiro do passeio"
+    ],
+    "resposta": "Abra Excursões, crie a excursão e configure os dados da viagem e o roteiro. Revise antes de compartilhar o convite com os participantes."
+  },
+  {
+    "id": "login",
+    "perfil": "todos",
+    "fonte": "android:src/app/(auth)/login.tsx",
+    "consultas": [
+      "Fazer login",
+      "entrar na conta",
+      "acessar painel",
+      "entrar pelo navegador"
+    ],
+    "resposta": "Entre com o e-mail e a senha da sua conta. No navegador, o painel aceita contas já autorizadas. Se esqueceu a senha, use a recuperação de acesso."
+  },
+  {
+    "id": "senha",
+    "perfil": "todos",
+    "fonte": "android:src/app/(auth)/login.tsx",
+    "consultas": [
+      "Esqueci minha senha",
+      "recuperar senha",
+      "redefinir senha",
+      "perdi a senha"
+    ],
+    "resposta": "Na tela de login do app, informe seu e-mail e toque na opção de recuperar senha. Confira a caixa de entrada e o spam. Não envie a senha nem o link de recuperação pelo chat."
+  },
+  {
+    "id": "email",
+    "perfil": "todos",
+    "fonte": "android:src/app/(tabs)/perfil.tsx",
+    "consultas": [
+      "Alterar e-mail",
+      "mudar email de acesso",
+      "trocar email da conta"
+    ],
+    "resposta": "Abra Perfil, entre em Conta e toque em Alterar e-mail. Informe o novo endereço e confirme a senha atual no aplicativo."
+  },
+  {
+    "id": "cad_motor",
+    "perfil": "motorista",
+    "fonte": "android:src/app/(auth)/cadastro.tsx",
+    "consultas": [
+      "Cadastro de motorista",
+      "criar minha conta",
+      "código de utilização",
+      "cadastrar condutor"
+    ],
+    "resposta": "Na tela de login do app, escolha cadastro de motorista. Preencha os dados e o código de acesso do motorista. Esse código é diferente do convite para entrar em uma turma."
+  },
+  {
+    "id": "cad_pass",
+    "perfil": "passageiro",
+    "fonte": "android:src/app/(auth)/cadastro.tsx",
+    "consultas": [
+      "Cadastro de passageiro",
+      "criar minha conta",
+      "cadastrar estudante"
+    ],
+    "resposta": "Na tela de login do app, escolha cadastro de passageiro e preencha os dados solicitados. O código de turma serve para entrar no grupo depois do cadastro."
+  },
+  {
+    "id": "cad_web",
+    "perfil": "todos",
+    "fonte": "web:app/lib/conhecimento-bevans.mjs",
+    "consultas": [
+      "Criar conta pelo site",
+      "cadastro no navegador",
+      "registrar no site"
+    ],
+    "resposta": "O cadastro público do site está fechado. Para criar sua conta, use o cadastro do aplicativo Android. Para acessar o painel web, use uma conta autorizada."
+  },
+  {
+    "id": "notificacao",
+    "perfil": "todos",
+    "fonte": "web:app/lib/conhecimento-bevans.mjs",
+    "consultas": [
+      "Notificação não chega",
+      "aviso de saída",
+      "push no navegador"
+    ],
+    "resposta": "Confira a conexão e a permissão de notificações do BeVans no aparelho. O envio de push no navegador depende de validação da infraestrutura. Consulte a viagem no aplicativo."
+  },
+  {
+    "id": "frota",
+    "perfil": "todos",
+    "fonte": "web:app/lib/conhecimento-bevans.mjs",
+    "consultas": [
+      "Gestão de frota",
+      "administrar vários motoristas",
+      "cadastrar organização"
+    ],
+    "resposta": "A gestão de frotas e a atribuição de veículos a vários motoristas estão em planejamento."
+  }
+]
